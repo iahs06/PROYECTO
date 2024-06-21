@@ -3,79 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Proyecto</title>
-    <style>
-        body {
-            background-color: #111; /* Color de fondo negro */
-            color: #fff; /* Texto blanco */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0f0; /* Verde neón */
-            padding: 10px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            background-color: #222;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav a {
-            color: #0f0;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            padding: 20px;
-        }
-        .content h2 {
-            color: #0f0;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-        }
-        footer {
-            background-color: #222;
-            color: #888;
-            text-align: center;
-            padding: 10px 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>El Universo de los Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Proyecto</h1>
+        <h1>El Universo de los Videojuegos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="generos.html">Géneros</a>
+            <a href="destacados.html">Destacados</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="VIDEOJUEGOS.html">Videojuegos</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="https://provideojuegos04.blogspot.com/?m=1" target="_blank">Blog</a>
-    </nav>
-    <div class="content">
+
+    <main>
         <section id="inicio">
-            <h2>Bienvenido a nuestra página</h2>
-            <p>Bienvenido a GMLA, tu fuente definitiva para estar al tanto de las últimas noticias y actualizaciones en el mundo de los videojuegos. Aquí encontrarás artículos, análisis y reportajes sobre los lanzamientos más recientes, avances tecnológicos, eventos de la industria y todo lo que necesitas saber para estar al día en tu pasión por los videojuegos. Únete a nuestra comunidad y no te pierdas ninguna novedad en este emocionante universo digital.</p>
-            <img src="https://img.freepik.com/foto-gratis/controlador-sujecion-manos-alto-angulo_23-2149829169.jpg" alt="Imagen de bienvenida">
+            <h2>Un viaje a través de mundos virtuales</h2>
+            <div class="hero-image">
+                <img src="https://media.contentapi.ea.com/content/dam/gin/images/2021/10/ea-play-2021-hero-banner-desktop-16x9.jpg.adapt.crop16x9.1023w.jpg" alt="Imagen de videojuegos">
+                <div class="hero-text">
+                    <p>Sumérgete en la historia, la cultura y la tecnología detrás de los videojuegos. Explora los géneros más populares, descubre los títulos más destacados y comparte tus experiencias en nuestra comunidad.</p>
+                </div>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IiPLcw8wX5I" title="The Story of Video Games" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Página Estilo Razer. Todos los derechos reservados.</p>
-    </footer>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
