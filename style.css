@@ -1,12 +1,15 @@
+/* Estilos generales */
 body {
-    font-family: sans-serif;
+    font-family: 'Rajdhani', sans-serif; /* Fuente de Razer */
     margin: 0;
     padding: 0;
+    background-color: #161618; /* Fondo negro Razer */
+    color: #ffffff; /* Texto blanco */
 }
 
 .sidebar {
     width: 250px;
-    background-color: #f0f0f0; /* Gris claro */
+    background-color: #28282B; /* Gris oscuro Razer */
     position: fixed;
     height: 100%;
     overflow-y: auto;
@@ -15,8 +18,9 @@ body {
 .sidebar h2 {
     padding: 10px;
     text-align: center;
-    background-color: #333; /* Gris oscuro */
-    color: white;
+    background-color: #00FF00; /* Verde Razer */
+    color: #212121; /* Texto negro */
+    font-weight: 600; /* Negrita */
 }
 
 .sidebar ul {
@@ -27,14 +31,15 @@ body {
 
 .sidebar li a {
     display: block;
-    color: #333;
+    color: #ffffff; /* Texto blanco */
     padding: 8px 16px;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .sidebar li a:hover {
-    background-color: #555;
-    color: white;
+    background-color: #00FF00; /* Verde Razer */
+    color: #212121; /* Texto negro */
 }
 
 .content {
@@ -44,15 +49,21 @@ body {
 
 h1, h2 {
     text-align: center;
+    font-weight: 600; /* Negrita para los títulos */
 }
 
+/* Formulario de comentarios y donaciones */
 form {
     margin-bottom: 20px;
+    background-color: #28282B; /* Gris oscuro Razer */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    color: #ffffff; /* Texto blanco para las etiquetas */
 }
 
 input[type="text"],
@@ -61,18 +72,36 @@ textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #00FF00; /* Borde verde Razer */
+    background-color: #161618; /* Fondo negro Razer */
+    color: #ffffff; /* Texto blanco */
 }
 
 input[type="submit"] {
-    background-color: #4CAF50; /* Verde */
-    color: white;
+    background-color: #00FF00; /* Verde Razer */
+    color: #212121; /* Texto negro */
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .donations,
 .contact-info {
     margin-top: 20px;
+    background-color: #28282B; /* Gris oscuro Razer */
+    padding: 20px;
+    border-radius: 8px;
 }
+
+/* Footer */
+footer {
+    background-color: #000; /* Negro */
+    color: #00FF00; /* Verde Razer */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Para evitar que el pie de página se superponga al contenido */
+    bottom: 0;
+    width: 100%;
+}
+
