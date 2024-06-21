@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comentarios</title>
+    <title>Contacto</title>
     <style>
         /* Estilos generales */
         body {
             font-family: 'Rajdhani', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #161618;
+            background-color: #151515; /* Negro más intenso */
             color: #ffffff;
         }
 
         .sidebar {
             width: 250px;
-            background-color: #28282B;
+            background-color: #28282B; /* Gris oscuro Razer */
             position: fixed;
             height: 100%;
             overflow-y: auto;
@@ -25,9 +25,9 @@
         .sidebar h2 {
             padding: 10px;
             text-align: center;
-            background-color: #00FF00;
-            color: #212121;
-            font-weight: 600;
+            background-color: #00FF00; /* Verde Razer */
+            color: #212121; /* Texto negro */
+            font-weight: 600; /* Negrita */
         }
 
         .sidebar ul {
@@ -38,15 +38,15 @@
 
         .sidebar li a {
             display: block;
-            color: #ffffff;
+            color: #ffffff; /* Texto blanco */
             padding: 8px 16px;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
         }
 
         .sidebar li a:hover {
-            background-color: #00FF00;
-            color: #212121;
+            background-color: rgba(0, 255, 0, 0.2); /* Verde transparente en hover */
+            box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.3);
         }
 
         .content {
@@ -56,13 +56,14 @@
 
         h1, h2 {
             text-align: center;
-            font-weight: 600;
+            font-weight: 700; /* Negrita más fuerte */
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra de texto */
         }
 
         /* Formulario de comentarios y donaciones */
         form {
             margin-bottom: 20px;
-            background-color: #28282B;
+            background-color: #28282B; /* Gris oscuro Razer */
             padding: 20px;
             border-radius: 8px;
         }
@@ -70,7 +71,7 @@
         label {
             display: block;
             margin-bottom: 5px;
-            color: #ffffff;
+            color: #ffffff; /* Texto blanco para las etiquetas */
         }
 
         input[type="text"],
@@ -79,14 +80,14 @@
             width: 100%;
             padding: 8px;
             margin-bottom: 10px;
-            border: 1px solid #00FF00;
-            background-color: #161618;
-            color: #ffffff;
+            border: 1px solid #00FF00; /* Borde verde Razer */
+            background-color: #161618; /* Fondo negro Razer */
+            color: #ffffff; /* Texto blanco */
         }
 
         input[type="submit"] {
-            background-color: #00FF00;
-            color: #212121;
+            background-color: #00FF00; /* Verde Razer */
+            color: #212121; /* Texto negro */
             padding: 10px 20px;
             border: none;
             cursor: pointer;
@@ -96,26 +97,24 @@
         .donations,
         .contact-info {
             margin-top: 20px;
-            background-color: #28282B;
+            background-color: #28282B; /* Gris oscuro Razer */
             padding: 20px;
             border-radius: 8px;
         }
     </style>
 </head>
 <body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="adopcion.html">Adopción</a></li>
+            <li><a href="https://huesitosaoptame.blogspot.com/2024/05/huesitos.html">Blog</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="comentarios.html">Comentarios</a></li>
+        </ul>
+    </div>
 
-    <header>
-        <h1>El Ajolote Mexicano</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="informacion.html">¿Qué es?</a>
-            <a href="caracteristicas.html">Características y Datos</a>
-            <a href="blog.html">Blog</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    
     <div class="content">
         <h1>Comentarios</h1>
         <form action="#" method="post">
@@ -127,24 +126,24 @@
             <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
             <input type="submit" value="Enviar">
         </form>
-    </div>
 
-    <div class="contact-info">
-        <h2>Contacto</h2>
-        <p>Número de contacto: 123-456-7890</p>
-        <p>Correo electrónico: contacto@ejemplo.com</p>
-        <p>Visitas: <span id="contador-visitas">0</span></p>
-    </div>
-    
-    <div class="donations">
-        <h2>Donaciones</h2>
-        <p>Si no tienes la posibilidad de adoptar algún perrito nos puedes ayudar con una donación ya sea de croquetas para perro, collares, juguetes para perros, shampoo para los perritos, entre otras cosas.
-        Si te es posible, nos ayudarías a compartir este blog para que estos perritos puedan conseguir un buen hogar.
-        </p>
-        <form action="https://tu-plataforma-de-donaciones.com" method="post">
-            <input type="number" id="amount" name="amount" placeholder="Cantidad a donar" required>
-            <input type="submit" value="Donar">
-        </form>
+        <div class="contact-info">
+            <h2>Contacto</h2>
+            <p>Número de contacto: 123-456-7890</p>
+            <p>Correo electrónico: contacto@ejemplo.com</p>
+            <p>Visitas: <span id="contador-visitas">0</span></p>
+        </div>
+        
+        <div class="donations">
+            <h2>Donaciones</h2>
+            <p>Si no tienes la posibilidad de adoptar algún perrito nos puedes ayudar con una donación ya sea de croquetas para perro, collares, juguetes para perros, shampoo para los perritos, entre otras cosas.
+            Si te es posible, nos ayudarías a compartir este blog para que estos perritos puedan conseguir un buen hogar.
+            </p>
+            <form action="https://tu-plataforma-de-donaciones.com" method="post">
+                <input type="number" id="amount" name="amount" placeholder="Cantidad a donar" required>
+                <input type="submit" value="Donar">
+            </form>
+        </div>
     </div>
 
     <footer>
@@ -154,3 +153,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+  
