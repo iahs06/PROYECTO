@@ -1,31 +1,31 @@
 /* Estilos generales */
 body {
-    font-family: 'Rajdhani', sans-serif; /* Fuente de Razer */
+    font-family: 'Rajdhani', sans-serif; 
     margin: 0;
-    background-color: #161618; /* Fondo negro Razer */
-    color: #ffffff; /* Texto blanco */
+    background-color: #161618; 
+    color: #ffffff; 
 }
 
 header {
-    background-color: #00FF00; /* Verde Razer */
-    color: #212121; /* Texto negro */
+    background-color: #00FF00; 
+    color: #212121; 
     padding: 1rem 0;
     text-align: center;
 }
 
 h1, h2 {
     margin: 0.5rem 0;
-    font-weight: 600; /* Negrita para los títulos */
+    font-weight: 600; 
 }
 
 nav {
-    background-color: #161618; /* Fondo negro Razer */
+    background-color: #161618; 
     padding: 0.5rem 0;
     text-align: center;
 }
 
 nav a {
-    color: #00FF00; /* Verde Razer */
+    color: #00FF00; 
     text-decoration: none;
     margin: 0 1rem;
     padding: 0.5rem 1rem;
@@ -33,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #333; /* Gris oscuro */
+    background-color: #333; 
 }
 
 main {
@@ -42,10 +42,11 @@ main {
 
 section {
     margin-bottom: 2rem;
-    background-color: #28282B; /* Gris oscuro Razer */
+    background-color: #28282B; 
     padding: 1.5rem;
     border-radius: 8px;
 }
+
 
 /* Estilos específicos */
 .newspaper-style {
@@ -60,86 +61,8 @@ section {
     margin-top: 1rem;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/* ... (otros estilos específicos) ... */
 
-.gallery img {
-    width: 300px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Sombra verde Razer */
-}
-
-.case-container {
-    margin-bottom: 2rem;
-}
-
-.case-container h3 {
-    color: #00FF00; /* Verde Razer para los títulos de los casos */
-}
-
-form label {
-    display: block;
-    margin-top: 0.5rem;
-    color: #ffffff; /* Texto blanco para las etiquetas del formulario */
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
-    border: 1px solid #00FF00; /* Verde Razer para los bordes de los campos del formulario */
-    background-color: #28282B; /* Gris oscuro Razer para el fondo de los campos del formulario */
-    color: #ffffff; /* Texto blanco en los campos del formulario */
-}
-
-button {
-    background-color: #00FF00; /* Verde Razer */
-    color: #212121; /* Texto negro */
-    padding: 0.8rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #000; /* Negro */
-    color: #00FF00; /* Verde Razer */
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Hero Image */
-.hero-image {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    opacity: 0.7; /* Opacidad de la imagen */
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    border-radius: 10px;
-}
-/* ... (otros estilos del sitio) ... */
 
 /* Estilos para la sección de comentarios */
 .newspaper-style form {
@@ -175,3 +98,27 @@ footer {
     margin-top: 1rem; 
 }
 
+
+/* Hero Image */
+.hero-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7; /* Opacidad de la imagen */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border-radius: 10px;
+}
