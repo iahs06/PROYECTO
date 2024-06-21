@@ -139,3 +139,39 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
     border-radius: 10px;
 }
+/* ... (otros estilos del sitio) ... */
+
+/* Estilos para la sección de comentarios */
+.newspaper-style form {
+    background-color: #28282B; /* Gris oscuro Razer */
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.newspaper-style label {
+    display: block;
+    margin-top: 0.5rem;
+    color: #ffffff; /* Texto blanco */
+}
+
+.newspaper-style input[type="text"],
+.newspaper-style input[type="email"],
+.newspaper-style textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #00FF00; /* Verde Razer */
+    background-color: #161618; /* Negro Razer */
+    color: #ffffff; /* Texto blanco */
+}
+
+.newspaper-style button {
+    background-color: #00FF00; /* Verde Razer */
+    color: #212121; /* Texto negro */
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem; 
+}
+
