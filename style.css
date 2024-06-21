@@ -1,186 +1,130 @@
-/* Estilos generales */
 body {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #fcf7e9;
+    color: #333;
     margin: 0;
-    background-color: #161618;
-    color: #ffffff;
+    padding: 0;
 }
 
 header {
-    background-color: #00FF00;
-    color: #212121;
-    padding: 1rem 0;
+    background-color: #ffe066;
+    color: white;
+    padding: 15px 0;
     text-align: center;
 }
 
-h1, h2 {
-    margin: 0.5rem 0;
-    font-weight: 600;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 nav {
-    background-color: #161618;
-    padding: 0.5rem 0;
-    text-align: center;
+    margin: 20px 0;
 }
 
 nav a {
-    color: #00FF00;
+    margin: 0 15px;
     text-decoration: none;
-    margin: 0 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #333;
+    color: #ffe066;
 }
 
 main {
-    padding: 2rem;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-section {
-    margin-bottom: 2rem;
-    background-color: #28282B;
-    padding: 1.5rem;
-    border-radius: 8px;
+h2 {
+    color: #ffe066;
 }
 
-/* Estilos específicos */
 .newspaper-style {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 50%;
+    background-color: #fffceb;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.newspaper-style img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
+.newspaper-style p {
+    margin: 0 0 1em;
+    line-height: 1.6;
 }
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
+    background-color: #fffceb;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .gallery img {
     width: 300px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); 
-}
-
-.case-container {
-    margin-bottom: 2rem;
-}
-
-.case-container h3 {
-    color: #00FF00; 
-}
-
-form label {
-    display: block;
-    margin-top: 0.5rem;
-    color: #ffffff; 
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
-    border: 1px solid #00FF00; 
-    background-color: #28282B; 
-    color: #ffffff; 
-}
-
-button {
-    background-color: #00FF00;
-    color: #212121;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #000; 
-    color: #00FF00;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Hero Image */
-.hero-image {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    opacity: 0.7; 
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); 
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #ffe066;
     border-radius: 10px;
 }
 
-/* Estilos para la sección de comentarios */
-#comentarios { 
-    margin-bottom: 2rem;
-    background-color: #28282B;
-    padding: 1.5rem;
-    border-radius: 8px;
+.comment-section {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fffceb;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-#comentarios h2 {  
-    color: #00FF00; 
-    text-align: center; 
+.comment-section form {
+    display: flex;
+    flex-direction: column;
 }
 
-#comentarios form { 
-    /* No es necesario un fondo específico para el formulario */
+.comment-section label {
+    margin-top: 10px;
 }
 
-#comentarios label {
-    display: block;
-    margin-top: 0.5rem;
-    color: #ffffff; 
+.comment-section input,
+.comment-section textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
-#comentarios input[type="text"],
-#comentarios input[type="email"],
-#comentarios textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.2rem;
-    border: 1px solid #00FF00; 
-    background-color: #161618; 
-    color: #ffffff; 
-}
-
-#comentarios button {
-    background-color: #00FF00; 
-    color: #212121; 
-    padding: 0.8rem 1.5rem;
+.comment-section button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #ffd54f;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 1rem; 
+}
+
+.comment-section button:hover {
+    background-color: #ffe066;
+}
+
+.comments-display {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comments-display h3 {
+    margin-bottom: 10px;
 }
 
