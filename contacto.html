@@ -4,7 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentarios</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #161618;
+            color: #ffffff;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #28282B;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar h2 {
+            padding: 10px;
+            text-align: center;
+            background-color: #00FF00;
+            color: #212121;
+            font-weight: 600;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li a {
+            display: block;
+            color: #ffffff;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar li a:hover {
+            background-color: #00FF00;
+            color: #212121;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* Formulario de comentarios y donaciones */
+        form {
+            margin-bottom: 20px;
+            background-color: #28282B;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #00FF00;
+            background-color: #161618;
+            color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #00FF00;
+            color: #212121;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .donations,
+        .contact-info {
+            margin-top: 20px;
+            background-color: #28282B;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <div class="sidebar">
@@ -28,19 +124,21 @@
             <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
             <input type="submit" value="Enviar">
         </form>
-
+        
+       
+            </form>
+        </div>
+        
         <div class="contact-info">
             <h2>Contacto</h2>
             <p>Número de contacto: 123-456-7890</p>
             <p>Correo electrónico: contacto@ejemplo.com</p>
-            <p>Visitas: <span id="contador-visitas">0</span></p>
+            <p>Visitas: <span id="contador-visitas">0</span></p> 
         </div>
     </div>
-
     <footer>
         <p>&copy; 2024 Todos los derechos reservados.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
