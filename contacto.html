@@ -7,45 +7,40 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div class="sidebar">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="generos.html">Géneros</a></li>
-            <li><a href="destacados.html">Destacados</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </div>
-
-    <div class="content">
+    <header>
         <h1>Comentarios</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="historia.html">Historia</a>
+            <a href="generos.html">Géneros</a>
+            <a href="destacados.html">Destacados</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-        <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+    <main>
+        <section class="newspaper-style">  
+            <h2>Déjanos tu opinión</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="comment">Comentario:</label>
-            <textarea id="comment" name="comment" rows="4" required></textarea>
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
-
-        <div class="contact-info">
-            <h2>Contacto</h2>
-            <p>Número de contacto: 123-456-7890</p>
-            <p>Correo electrónico: contacto@ejemplo.com</p>
-        </div>
-    </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Todos los derechos reservados.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
